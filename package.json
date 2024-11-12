@@ -1,0 +1,17 @@
+{
+  "author": "dgw0103",
+  "bugs": {
+    "url": "https://github.com/dgw0103/Area/issues"
+  },
+  "description": "Area that invoke event if character enter to.",
+  "displayName": "Area",
+  "hideInEditor": "false",
+  "homepage": "https://github.com/dgw0103/Area.git",
+  "license": "MIT",
+  "name": "com.dgw0103.area",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dgw0103/Area.git"
+  },
+  "version": "0.0.0"
+}
