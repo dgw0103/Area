@@ -9,3 +9,16 @@ This picture means you should just do two things.
 2. Write script to reference from 'AreaEventData'. (Actually, this is not essential if you want.)
 
 ## How to use?
+1. Create a script through right-click > Create > Scripting > MonoBehaviour script or right-click > Create > C# script in project window, and name you want.
+2. Change parent class to 'AreaEventData'.
+3. Implement functions.
+4. Write 'Debug.Log("Enter");' in OnEnter function.
+5. Write 'Debug.Log("Exit");' in OnExit function.
+6. Refresh at editor. Then, the class has a 'CreateAssetMenu' attribute automatically.
+7. Create event asset through right-click > Create > AreaEventData > [class name] in project window.
+8. Create Cube and Capsule through right-click > 3D Object > Cube, Capsule in hierarchy window.
+9. Add 'Area' component to cube and set true 'Is Trigger'.
+10. Add 'Character', Rigidbody component to capsule and set true 'Is Kinematic'.
+11. Run play mode and move the capsule object into the cube in scene window.
+12. See console window and check 'Enter' text.
+13. If the capsule go out cube, it will write 'Exit' in console window.
