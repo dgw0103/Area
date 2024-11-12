@@ -14,6 +14,11 @@ public class Character : MonoBehaviour
     {
         foreach (var item in currentAreaEventDatas)
         {
+            if (item == null)
+            {
+                continue;
+            }
+
             areaEventDatas.Add(CreateAreaAreaEventDataPair(area, item));
 
             if ((item.IsAffectedOnlyOnce && areaEventDatas.Count((x) => x.areaEventData == item) < 2) || item.IsAffectedOnlyOnce == false)
@@ -28,6 +33,11 @@ public class Character : MonoBehaviour
 
         foreach (var item in reversed)
         {
+            if (item == null)
+            {
+                continue;
+            }
+
             areaEventDatas.Remove(CreateAreaAreaEventDataPair(area, item));
 
             if ((item.IsAffectedOnlyOnce && areaEventDatas.Any((x) => x.areaEventData == item) == false) || item.IsAffectedOnlyOnce == false)
